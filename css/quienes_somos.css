@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,..900');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+    min-height: 100vh; /*Estatico*/
+    background: #fafafa;
+}
+
+header{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    display: flex;
+    height: 160px;
+}
+
+.t-home {
+    display: flex;
+    align-items: center;
+    color: coral;
+}
+
+.t-services {
+    display: flex;
+    align-items: center;
+    color: #62baea;
+}
+
+nav a {
+    font-weight: 500px;
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+
+nav button {
+    background-color: rgb(141, 170, 243);
+    border-radius: 7px;
+    padding: 5px 20px;
+    color: black;
+
+}
+
+.titulo{
+    margin-left: 200px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.image1{   
+    height: 300px;
+}
+
+.mision_vision{
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.titulovalores{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.navbar-footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
