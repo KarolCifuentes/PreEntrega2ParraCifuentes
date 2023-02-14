@@ -17,36 +17,37 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--bootstrap nav-->
-            <div class="grid-layout-nav">
-                <div class="navbar-logo"
-                    style="display: flex; justify-content: left; align-items: center; width: 100%; height: 600%; position: relative;">
-                    <img src="/img/logo.png" width="10%" height="10%">
-                    <h1 style="color: coral; font-size:30px;">Home services</h1>
-                </div>
-                <div class="" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Nuestro servicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="/html/sign_up_usuarios.html" class="btn btn-outline-primary">Sing up</a>
-                        </li>
-                        <li>
-                            <a href="/html/login.html" class="btn btn-outline-primary">Login</a>
-                        </li>
-                    </ul>
-                </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div style="display: flex; justify-content: flex-start; align-items: center;">
+                <img src="/img/logo.png" width="40%">
+                <h1 style="color: coral; font-size:20px;">Home services</h1>
             </div>
+
+            <div id="navbarNav" style="min-width: 70% ; display: flex; justify-content: flex-end;">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Nuestro servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="/html/sign_up_usuarios.html" class="btn btn-outline-primary">Sing up</a>
+                    </li>
+                    <li>
+                        <a href="/html/login.html" class="btn btn-outline-primary">Login</a>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
     </header>
     <main>
@@ -175,19 +176,25 @@
 
         <section> <!-- Section 4 values -->
             <div class="grid-confianza">
-                <div class="col-6">
-                    <img class="img-confianza" src="/img/confianza.png" alt="trust image">
-                </div>
                 <div class="row">
                     <div class="col-6">
-                        <h3 style="display: flex; justify-content: center; height: 100px; color: coral;">Confianza</h3>
+                        <img class="img-confianza" src="/img/confianza.png" alt="trust image">
+                    </div>
 
-                        <div><ion-icon name="checkmark-circle-outline"></ion-icon></div>
-                        <p>Calificados y Evaluados</p>
-                        <div><ion-icon name="checkmark-circle-outline"></ion-icon></div>
-                        <p>Evaluados en Aspectos Tecnicos</p>
-                        <div><ion-icon name="checkmark-circle-outline"></ion-icon></div>
-                        <p>Refencias Comprobables</p>
+                    <div class="col-6">
+                        <h3 style="text-align: center; padding: 10%; color: coral;">Confianza</h3>
+                        <div style="display: flex;"><ion-icon name="checkmark-circle-outline"
+                                style="padding-right: 10px; color: green;"></ion-icon>
+                            <p>Calificados y Evaluados</p>
+                        </div>
+                        <div style="display: flex;"><ion-icon name="checkmark-circle-outline"
+                                style="padding-right: 10px; color: green;"></ion-icon>
+                            <p>Evaluados en Aspectos Técnicos</p>
+                        </div>
+                        <div style="display: flex;"><ion-icon name="checkmark-circle-outline"
+                                style="padding-right: 10px; color: green;"></ion-icon>
+                            <p>Referencias Comprobables</p>
+                        </div>
                     </div>
                 </div>
             </div>

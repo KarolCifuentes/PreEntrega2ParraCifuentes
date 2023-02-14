@@ -42,7 +42,7 @@ body {
 }
 
 .grid-seguridad {
-    margin: 5%;
+  margin: 5%;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -103,12 +103,12 @@ body {
 
 
 
-.grid-layout-nav {
+/* .grid-layout-nav {
     display: grid;
-    grid-template-columns: auto auto;
-    background-color: lightpink;
+    /* grid-template-columns: auto auto; */
+    /* background-color: lightpink; 
 
-}
+*/
 
 .grid-layout-dropdown {
     display: grid;
