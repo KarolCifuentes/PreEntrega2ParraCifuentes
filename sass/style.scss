@@ -1,0 +1,76 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+header {
+
+    #title {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .navbar img {
+        height: 200px
+    }
+
+    .nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/*section 3 */
+
+.grid-seguridad {
+
+    .col-6 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-seguridad {
+
+        text-align: center;
+    }
+}
+
+.grid-confianza{
+
+    .content-confianza{
+        
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+
+    .content-confianza h3 {
+        
+        color: coral;
+        text-align: left;
+    }
+}
+
+
+
+
+/*buttons sing up and login*/
+$custom-colors: (
+    "color-orange": #d7986bbd,
+    "color-blue": rgb(93, 128, 151),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

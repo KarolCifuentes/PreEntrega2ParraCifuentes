@@ -5,78 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <meta name="keywords" content="seguridad,servicio,login,app,pagina ">
+    <meta name="description" content="Registrate y ingresa en nuestra pagina para hacer uso de nuetra App, asi conoceras mas detalle lo que brinda Homeservice  ">
+    <meta name="author" content="Karol Sofia Parra Cifuentes">
 
+
+    <title>Quienes somos</title>
+
+    <!--estilos css-->
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!--bootstrap links-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f76bc19b64.js" crossorigin="anonymous"></script> -->
+
+
+    <!--iconos de redes sociales-->
     <script src="https://kit.fontawesome.com/f76bc19b64.js" crossorigin="anonymous"></script>
 
+    <!--estilos sass-->
 
+    <link rel="stylesheet" href="../sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
     <header> <!--header nav with bootstrap-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div style="display: flex; justify-content: flex-start; align-items: center;">
-                <img src="/img/logo.png" width="40%">
-                <h1><b><span class="color-home">Home</span> <span class="color-services">Service</span></b></h1>
+        <nav class="navbar navbar-light ">
+            <div class="d-flex align-items-center">
+                <img id="img-logo" src="/img/logo.png" alt="img logo" height="200px">
+                <h1 id="nam-company">
+                    <b><span class="color-home">Home</span><span class="color-services">Service</span></b>
+                </h1>
             </div>
-
-            <div id="navbarNav" style="min-width: 70% ; display: flex; justify-content: flex-end;">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
+            <div class="d-flex justify-content-end">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item active p-2 ">
                         <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2">
                         <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2">
                         <a class="nav-link" href="">Nuestro servicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2">
                         <a class="nav-link">Contacto</a>
                     </li>
-                    <li>
-                        <a href="/html/sign_up_usuarios.html" class="btn btn-outline-primary mr-sm-2">Sing up</a>
+                    <li class="buttons p-2">
+                        <a href="/html/sign_up_usuarios.html" class="btn btn-color-orange mr-sm-2">Sing up</a>
                     </li>
-                    <li>
-                        <a href="/html/login.html" class="btn btn-outline-primary">Login</a>
+                    <li class=" p-2">
+                        <a href="/html/login.html" class="btn btn-color-orange">Login</a>
                     </li>
                 </ul>
             </div>
 
         </nav>
     </header>
-
     <main>
-        <section> <!--login session with bootstrap-->    
+        <section> <!--login session with bootstrap-->
             <div class="" style="padding: 5%; margin-right: 5%; margin-left: 5%;">
                 <div class="row">
-                  <div class="col">
-                    <img src="/img/login.png" alt="">
-                  </div>  
-
-                  <div class="col" >
-                    <h2 style="color: coral; text-align: center; padding: 5%;"><b>Login</b></h2> 
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email o Teléfono">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login In</button>
-                      </form>
-                  </div>
+                    <div class="col">
+                        <img src="/img/login.png" alt="img login">
+                    </div>
+                    <div class="col">
+                        <h2 style="color: coral; text-align: center; padding: 5%;"><b>Login</b></h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email o Teléfono">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Contraseña">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login In</button>
+                        </form>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <br><br><br><br><br><br>
 
@@ -117,29 +133,3 @@
 </body>
 
 </html>
-<!-- <div>
-        <h2 class="cuenta" style="text-align: right;">CUENTA DE INICIO DE SESION</h2>
-    </div>
-    <div class="login">
-        <div>
-            <img class="image1" src="img/seguridad.png">
-        </div>
-        <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-
-    </div> -->

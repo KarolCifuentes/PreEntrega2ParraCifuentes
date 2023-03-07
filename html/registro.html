@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Tecnico</title>
+
+    <link rel="stylesheet" href="/css/sign_up_tecnico.css">
+
+</head>
+
+<body>
+
+    <header> <!--header nav with bootstrap-->
+        <nav class="navbar navbar-light ">
+            <div class="d-flex align-items-center">
+                <img id="img-logo" src="/img/logo.png" alt="img logo" height="200px">
+                <h1 id="nam-company">
+                    <b><span class="color-home">Home</span><span class="color-services">Service</span></b>
+                </h1>
+            </div>
+            <div class="d-flex justify-content-end">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item active p-2 ">
+                        <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="">Nuestro servicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link">Contacto</a>
+                    </li>
+                    <li class="buttons p-2">
+                        <a href="/html/sign_up_usuarios.html" class="btn btn-outline-primary mr-sm-2">Sing up</a>
+                    </li>
+                    <li class=" p-2">
+                        <a href="/html/login.html" class="btn btn-outline-primary">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div>
+        <h2 class="cuenta" style="text-align: right;">CREAR CUENTA DE MIEMBROS</h2>
+    </div>
+    <div class="registro_tecnicos">
+        <div>
+            <img class="image1" src="/img/seguridad.png">
+        </div>
+
+        <form>
+            <div class="container">
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Nombre"></input>
+
+                <label for="surname">Apellido</label>
+                <input type="text" placeholder="Apellido"></input>
+            </div>
+
+            <div class="container">
+                <label for="email">Correo electrónico</label>
+                <input type="text" placeholder="email"></input>
+            </div>
+
+            <div class="container">
+                <label for="phone">Telefono</label>
+                <input type="number" placeholder="Telefono"></input>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="CREAR"></input>
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
