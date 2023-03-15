@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="seguridad,servicio,login,app,pagina ">
-    <meta name="description" content="Registrate y ingresa en nuestra pagina para hacer uso de nuetra App, asi conoceras mas detalle lo que brinda Homeservice  ">
+    <meta name="description"
+        content="Registrate y ingresa en nuestra pagina para hacer uso de nuetra App, asi conoceras mas detalle lo que brinda Homeservice  ">
     <meta name="author" content="Karol Sofia Parra Cifuentes">
 
 
-    <title>Quienes somos</title>
+    <title>Log in</title>
 
     <!--estilos css-->
     <link rel="stylesheet" href="/css/index.css">
@@ -29,67 +30,82 @@
 </head>
 
 <body>
-    <header> <!--header nav with bootstrap-->
-        <nav class="navbar navbar-light ">
-            <div class="d-flex align-items-center">
-                <img id="img-logo" src="/img/logo.png" alt="img logo" height="200px">
-                <h1 id="nam-company">
-                    <b><span class="color-home">Home</span><span class="color-services">Service</span></b>
-                </h1>
-            </div>
-            <div class="d-flex justify-content-end">
-                <ul class="d-flex align-items-center">
-                    <li class="nav-item active p-2 ">
-                        <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item p-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="">Nuestro servicio</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link">Contacto</a>
-                    </li>
-                    <li class="buttons p-2">
-                        <a href="/html/sign_up_usuarios.html" class="btn btn-color-orange mr-sm-2">Sing up</a>
-                    </li>
-                    <li class=" p-2">
-                        <a href="/html/login.html" class="btn btn-color-orange">Login</a>
-                    </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
         <section> <!--login session with bootstrap-->
-            <div class="" style="padding: 5%; margin-right: 5%; margin-left: 5%;">
-                <div class="row">
-                    <div class="col">
-                        <img src="/img/login.png" alt="img login">
-                    </div>
-                    <div class="col">
-                        <h2 style="color: coral; text-align: center; padding: 5%;"><b>Login</b></h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email o Teléfono">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+            <div class="log-in"> <!--style="padding: 5%; margin-right: 5%; margin-left: 5%;"-->
+                <div class="container">
+                    <div class="row"><!--wrapper-->
+                        <div class="col-6 col-8 mx-auto">
+                            <img src="/img/login.png" alt="img login">
+                        </div>
+                        <div class="col">
+                            <h2 class="text-login"><b>Log in</b></h2>
+                            <!-- <p class="text-normal"></p> -->
+                            <form action="" name="log-in" class="form">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email o Teléfono">
+                                    <div id="emailHelp" class="form-text">
+                                        We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Contraseña">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Save Password?</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Log In</button>
+                            </form>
+
+                            <div class="stiped">
+                                <spans class="striped-line"></spans>
+                                <spans class="striped-text">or</spans>
+                                <spans class="striped-line"></spans>
+                            </div>
+                            <div class="method">
+                                <div class="method-control">
+                                    <a href="#" class="method-action">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Continue with Google</span>
+                                    </a>
+                                </div>
+                                <div class="method-control">
+                                    <a href="#" class="method-action">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <span>Continue with Facebook</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Contraseña">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login In</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,6 +146,7 @@
             </div>
         </footer>
     </main>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
 </body>
 
 </html>

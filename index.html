@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="servicio,tecnicos,limpieza,plomeria,niñera"> 
-    <meta name="description" content="Brindamos un servicio con distintos tecnitos en areas especialidas para espacios como el hogar y oficinas.">
+    <meta name="keywords" content="servicio,tecnicos,limpieza,plomeria,niñera">
+    <meta name="description"
+        content="Brindamos un servicio con distintos tecnitos en areas especialidas para espacios como el hogar y oficinas.">
     <meta name="author" content="Karol Sofia Parra Cifuentes">
 
 
@@ -26,43 +27,37 @@
 
     <link rel="stylesheet" href="./sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
+
 </head>
 
 <body>
-    <header> <!--header nav with bootstrap-->
-        <nav class="navbar navbar-light ">
-            <div id="title">
-                <img src="/img/logo.png" alt="img logo">
-                <h1 id="nam-company">
-                    <b><span class="animate__animated animate__bounce color-home">Home</span><span
-                            class="color-services">Service</span></b>
-                </h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo d-flex">
+                <img class="logo-img" src="/img/logo.png" alt="logo img" width="15%">
+                <h1 class="fs-4 d-flex align-items-center"><b><span class="color-home">Home</span><span class="color-services">Service</span></b></h1>
             </div>
-            <div class="nav">
-                <ul>
-                    <li class="nav-item active p-2">
-                        <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item p-2">
+                    <li class="nav-item">
                         <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="">Nuestro servicio</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link">Contacto</a>
-                    </li>
-                    <li class="buttons p-2">
-                        <a href="/html/sign_up_usuarios.html" class="btn btn-color-orange mr-sm-2">Sing up</a>
-                    </li>
-                    <li class="p-2">
-                        <a href="/html/login.html" class="btn btn-color-orange">Login</a>
-                    </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                </form>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
         <section> <!--section 1 banner and dropdown with bootstrap-->
             <div class="banner">
@@ -239,6 +234,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
