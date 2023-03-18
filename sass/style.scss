@@ -70,7 +70,7 @@ body {
         padding: 0;
         width: 100%;
         height: 100%;
-        color: rgba(255, 255, 255, 0.649);
+        // color: rgba(255, 255, 255, 0.649);
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -106,12 +106,12 @@ body {
     color: $colorBlue;
 }
 
-// .grid-cards {
+.grid-cards {
 
-//     /* Arriba | Derecha | Abajo | Izquierda */
-//     margin: 2cm 5cm 2cm 0cm;
-//     column-count: 3;
-// }
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 2cm 5cm 2cm 0cm;
+    column-count: 3; /*rvisar*/
+}
 
 .card-text {
     text-align: justify;
@@ -129,19 +129,26 @@ body {
 
 /*business values*/
 
-.grid-confianza {
-    margin: 2% 20% 5% 20%;
+.card-style { /*grid*/
+    // margin: 2% 20% 5% 20%;
     background-color: #fffaf7;
     border: 1px solid rgb(248, 214, 193);
     border-radius: 0.50rem;
+    margin: 0.2%;
+
 
 }
 
-.img-cards {
-    width: 100%;
-    height: auto;
-    grid-column: 7/13;
+.col-without-padding{
+    padding: 0%;
+
 }
+
+// .img-cards {
+//     // width: 100%;
+//     // height: auto;
+//     // grid-column: 7/13;
+// }
 
 /*footer*/
 
