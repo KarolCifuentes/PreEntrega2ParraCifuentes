@@ -9,30 +9,30 @@ $colorBlue: rgb(42, 102, 243);
 
 // @use 'banner-layer';
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     font-family: 'Poppins', sans-serif;
+//     list-style: none;
+//     text-decoration: none;
+//     box-sizing: border-box;
+// }
 
-body {
+// body {
 
-    margin: 0%;
-    padding: 0%;
-    background-color: antiquewhite;
-    background: #fafafa;
+//     margin: 0%;
+//     padding: 0%;
+//     background-color: antiquewhite;
+//     background: #fafafa;
 
-}
+// }
 
 
-.navbar {
+// .navbar {
 
-    display: grid;
-    grid-template-columns: 10px 75px 75px 75px;
-}
+//     display: grid;
+//     grid-template-columns: 10px 75px 75px 75px;
+// }
 
 /*navbar barra de navegacion*/
 
@@ -119,18 +119,7 @@ body {
 
 /*section 3 Home Service*/
 
-.grid-seguridad {
-    margin: 5% 20% 2% 20%;
-    background-color: #fffaf7;
-    border: 1px solid rgb(248, 214, 193);
-    border-radius: 0.50rem;
-
-}
-
-/*business values*/
-
 .card-style { /*grid*/
-    // margin: 2% 20% 5% 20%;
     background-color: #fffaf7;
     border: 1px solid rgb(248, 214, 193);
     border-radius: 0.50rem;
@@ -141,7 +130,10 @@ body {
 
 .col-without-padding{
     padding: 0%;
+}
 
+.card:hover{
+    opacity: 0.7;
 }
 
 // .img-cards {
