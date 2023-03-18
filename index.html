@@ -35,11 +35,16 @@
         <div class="container-fluid">
             <div class="logo d-flex">
                 <img class="logo-img" src="/img/logo.png" alt="logo img" width="15%">
-                <h1 class="fs-4 d-flex align-items-center"><b><span class="color-home">Home</span><span class="color-services">Service</span></b></h1>
+                <h1 class="fs-4 d-flex align-items-center">
+                    <b>
+                        <span class="color-home">Home</span>
+                        <span class="color-services">Service</span>
+                    </b>
+                </h1>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,25 +56,29 @@
                         <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                </form>
+
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+
+                <button class="btn btn-primary" type="button">log in</button>
+                <button class="btn btn-primary" type="button">sing up</button>
             </div>
         </div>
     </nav>
+
     <main>
         <section> <!--section 1 banner and dropdown with bootstrap-->
             <div class="banner">
                 <div class="banner-layer">
                     <div class="banner-content">
-                        <div class="intento-1">
+                        <div>
                             <h2><b>Nuestros Servicios</b></h2>
-                            <p>Estás interesado en uno de nuestros servicios, filtra la siguiente información y conoce
+                            <p>Estás interesado en uno de nuestros servicios, filtra la siguiente información y
+                                conoce
                                 más acerca de nosotros.
                             </p>
                         </div>
-                        <div class="container text-center">
+                        <div class="container text-center d-flex justify-content-center height min-content">
                             <div class="row">
                                 <div class="col">
                                     <div class="btn-group">
@@ -99,7 +108,7 @@
                                 </div>
                                 <div class="col">
                                     <div>
-                                        <button type="button" class="btn btn-outline-light">Search</button>
+                                        <button type="button" class="btn btn-primary">Search</button><!--revisar-->
                                     </div>
                                 </div>
                             </div>
@@ -107,61 +116,70 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section> <!-- section 2 service card with bootstrap -->
 
-            <div class="service-title">
-                <h2><b>Nuestros Servicios Mas Adquiridos</b></h2>
-            </div>
-            <div class="grid-cards">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="/img/Limpieza.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title" href="#">Servicio de Limpieza</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.
-                            </p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+        </section>
+
+        <!-- <section> section 2 service card with bootstrap -->
+                <div class="service-title d-grid justify-content-center">
+                    <h2><b>Nuestros Servicios Mas Adquiridos</b></h2>
+                </div>
+                <div class="grid-cards">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="/img/Limpieza.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title " href="#">Servicio de Limpieza</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="/img/Mecanica.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Servicio de Mecania</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.
-                            </p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                        <div class="card">
+                            <img class="card-img-top" src="/img/Mecanica.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio de Mecania</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="/img/Plomeria.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Servicio de Plomeria</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.
-                            </p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                        <div class="card">
+                            <img class="card-img-top" src="/img/Plomeria.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio de Plomeria</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+           
+        <!-- </section> -->
+
         <section> <!-- section 3 Home Service with bootstrap -->
             <div class="grid-seguridad">
-                <div class="row ">
+                <div class="row d-flex align-items-center">
                     <div class="col-6">
-                        <div class="content-seguridad">
+                        <div class="content-seguridad text-center">
                             <h3>
                                 <b><span class="color-home">Home</span><span class="color-services">Service</span></b>
                             </h3>
-                            <p> Queremos brindar un servicio seguro, confiable y acorde a lo que el cliente requiera.
+                            <p> Queremos brindar un servicio seguro, confiable y acorde a lo que el cliente
+                                requiera.
                                 Brindamos distintos tipos de servicios pensando en expandir trabajos que pueden
                                 facilitar
                                 nuestras ocupaciones.
@@ -169,21 +187,23 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <img class="img-seguridad" src="/img/Seguridad.png" alt="img security">
+                        <img class="img-cards" src="/img/security.png" alt="img security">
                     </div>
                 </div>
             </div>
-        </section>
-        <section> <!-- section 4 business values card with bootstrap -->
-            <div class="grid-confianza">
-                <div class="row">
+
+            <!-- section 4 business values card with bootstrap -->
+            <div class="grid-confianza d-flex align-items-center">
+                <div class="row align-items-center">
                     <div class="col-6">
-                        <img class="img-confianza" src="/img/confianza.png" alt="img trust">
+                        <img class="img-cards" src="/img/confianza.png" alt="img trust">
                     </div>
-                    <div class="col-6 content-confianza">
+                    <div class="col-6 content-confianza h-100">
                         <div>
-                            <h3><b>Confianza</b></h3>
-                            <ul>
+                            <h4 class="text-primary"><b>Confianza</b></h4>
+                        </div>
+                        <div>
+                            <ol>
                                 <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                                     <p>Calificados y Evaluados</p>
                                 </li>
@@ -193,13 +213,14 @@
                                 <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                                     <p>Referencias Comprobables</p>
                                 </li>
-                            </ul>
-
+                            </ol>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--footer-->>
         <footer>
             <div>
                 <div class="card text-center">
@@ -221,7 +242,8 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                        </p>
                         <a href="#" class="btn btn-custom-color">Mas informacion</a>
                     </div>
                     <div class="grid-footer-nav">
@@ -235,6 +257,7 @@
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
