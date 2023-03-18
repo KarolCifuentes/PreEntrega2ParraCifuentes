@@ -18,21 +18,18 @@ $colorBlue: rgb(42, 102, 243);
 //     box-sizing: border-box;
 // }
 
-// body {
+body {
 
-//     margin: 0%;
-//     padding: 0%;
-//     background-color: antiquewhite;
-//     background: #fafafa;
-
-// }
+    background-color: antiquewhite;
+    background: #fafafa;
+}
 
 
-// .navbar {
+.title {
 
-//     display: grid;
-//     grid-template-columns: 10px 75px 75px 75px;
-// }
+    font-size: 25px;
+
+}
 
 /*navbar barra de navegacion*/
 
@@ -92,26 +89,7 @@ $colorBlue: rgb(42, 102, 243);
 
 }
 
-
-/*dropdown*/
-
-
-
 /*cards*/
-
-.service-title {
-
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    color: $colorBlue;
-}
-
-.grid-cards {
-
-    /* Arriba | Derecha | Abajo | Izquierda */
-    margin: 2cm 5cm 2cm 0cm;
-    column-count: 3; /*rvisar*/
-}
 
 .card-text {
     text-align: justify;
@@ -119,38 +97,32 @@ $colorBlue: rgb(42, 102, 243);
 
 /*section 3 Home Service*/
 
-.card-style { /*grid*/
+.card-style { 
+
     background-color: #fffaf7;
     border: 1px solid rgb(248, 214, 193);
     border-radius: 0.50rem;
     margin: 0.2%;
-
-
 }
 
 .col-without-padding{
     padding: 0%;
 }
 
-.card:hover{
-    opacity: 0.7;
-}
-
-// .img-cards {
-//     // width: 100%;
-//     // height: auto;
-//     // grid-column: 7/13;
+// .card:hover{
+//     opacity: 0.7;  /*cambiar*/
 // }
 
 /*footer*/
 
 .grid-footer-nav {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    padding: 3%;
-    hyphens: auto;
-    letter-spacing: 10px;
+    // display: flex;
+    // justify-content: center;
+    font-size: x-large;
+    margin-bottom: 2%;
+        // hyphens: auto;
+        // letter-spacing: 10px;
+    
 
 }
 
