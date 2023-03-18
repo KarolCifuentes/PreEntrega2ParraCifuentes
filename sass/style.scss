@@ -87,7 +87,7 @@ body {
             font-size: 18px;
         }
 
-       
+
     }
 
 }
@@ -106,21 +106,21 @@ body {
     color: $colorBlue;
 }
 
-.grid-cards {
+// .grid-cards {
 
-    /* Arriba | Derecha | Abajo | Izquierda */
-    margin: 2cm 5cm 2cm 5cm;
-    column-count: 3;
-}
+//     /* Arriba | Derecha | Abajo | Izquierda */
+//     margin: 2cm 5cm 2cm 0cm;
+//     column-count: 3;
+// }
 
-.card-text{
+.card-text {
     text-align: justify;
 }
 
 /*section 3 Home Service*/
 
 .grid-seguridad {
-    margin: 5% 20% 2% 20%;   
+    margin: 5% 20% 2% 20%;
     background-color: #fffaf7;
     border: 1px solid rgb(248, 214, 193);
     border-radius: 0.50rem;
@@ -131,13 +131,13 @@ body {
 
 .grid-confianza {
     margin: 2% 20% 5% 20%;
-    background-color: #fffaf7;    
+    background-color: #fffaf7;
     border: 1px solid rgb(248, 214, 193);
-    border-radius: 0.50rem;  
-    
+    border-radius: 0.50rem;
+
 }
 
-.img-cards{
+.img-cards {
     width: 100%;
     height: auto;
     grid-column: 7/13;

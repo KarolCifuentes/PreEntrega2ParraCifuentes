@@ -31,40 +31,44 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="logo d-flex">
-                <img class="logo-img" src="/img/logo.png" alt="logo img" width="15%">
-                <h1 class="fs-4 d-flex align-items-center">
-                    <b>
-                        <span class="color-home">Home</span>
-                        <span class="color-services">Service</span>
-                    </b>
-                </h1>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="logo d-flex">
+                        <img class="logo-img" src="/img/logo.png" alt="logo img" width="15%">
+                        <h1 class="fs-4 d-flex align-items-center">
+                            <b>
+                                <span class="color-home">Home</span>
+                                <span class="color-services">Service</span>
+                            </b>
+                        </h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
+                            </li>
+                        </ul>
 
-                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
 
-                <button class="btn btn-primary" type="button">log in</button>
-                <button class="btn btn-primary" type="button">sing up</button>
-            </div>
+                        <button class="btn btn-primary" type="button">log in</button>
+                        <button class="btn btn-primary" type="button">sing up</button>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
     <main>
         <section> <!--section 1 banner and dropdown with bootstrap-->
@@ -120,55 +124,61 @@
         </section>
 
         <!-- <section> section 2 service card with bootstrap -->
+        <div class="container text-center">
+            <div class="row">
                 <div class="service-title d-grid justify-content-center">
                     <h2><b>Nuestros Servicios Mas Adquiridos</b></h2>
                 </div>
-                <div class="grid-cards">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Limpieza.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title " href="#">Servicio de Limpieza</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Mecanica.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Servicio de Mecania</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Plomeria.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Servicio de Plomeria</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
-                            </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/img/Limpieza.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title " href="#">Servicio de Limpieza</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
                         </div>
                     </div>
                 </div>
-           
-        <!-- </section> -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/img/Mecanica.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio de Mecania</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This card has even longer content than the first to show that
+                                equal
+                                height action.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/img/Plomeria.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio de Plomeria</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This card has even longer content than the first to show that
+                                equal
+                                height action.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <a href="#" class="btn btn-outline-primary">Adquirir Servicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section> <!-- section 3 Home Service with bootstrap -->
             <div class="grid-seguridad">
