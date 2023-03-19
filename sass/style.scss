@@ -1,22 +1,18 @@
+@use 'botonColor';
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,..900');
 
+
+
 $colorOrange: rgb(231, 74, 42);
 $colorBlue: rgb(42, 102, 243);
 
 // @use 'banner-layer';
 
-// * {
-//     margin: 0;
-//     padding: 0;
-//     font-family: 'Poppins', sans-serif;
-//     list-style: none;
-//     text-decoration: none;
-//     box-sizing: border-box;
-// }
 
 body {
 
@@ -28,10 +24,37 @@ body {
 .title {
 
     font-size: 25px;
-
 }
 
-/*navbar barra de navegacion*/
+/*nav colores de nombre de la empresa*/
+
+.botonAzul{
+    @include botonColor.button-custom(#1f56ec);
+}
+
+.botonNaranja{
+    @include botonColor.button-custom(#ec711f);
+}
+
+//Map SASS Inicio
+$bluescale: (
+      "100": #6db6ff,
+      "200": #379bff,
+      "300": #2176ca
+);
+
+.textoBlueScale100{
+    color: map-get($bluescale, 100);
+}
+
+.textoBlueScale200{
+    color: map-get($bluescale, 200);
+}
+
+.textoBlueScale300{
+    color: map-get($bluescale, 300);
+}
+//Map SASS Fin
 
 .color-home {
     color: $colorOrange;
@@ -40,6 +63,8 @@ body {
 .color-services {
     color: $colorBlue;
 }
+
+
 
 /*banner*/
 
@@ -95,7 +120,7 @@ body {
     text-align: justify;
 }
 
-/*section 3 Home Service*/
+/*cards de la empresa*/
 
 .card-style { 
 
@@ -109,27 +134,18 @@ body {
     padding: 0%;
 }
 
-// .card:hover{
-//     opacity: 0.7;  /*cambiar*/
-// }
+.img-login{
+    background-image: url(/img/logo.png);
+    background-position: center center;
+}
+
+
 
 /*footer*/
 
-.grid-footer-nav {
-    // display: flex;
-    // justify-content: center;
+.grid-footer-nav {   
     font-size: x-large;
     margin-bottom: 2%;
-        // hyphens: auto;
-        // letter-spacing: 10px;
-    
-
 }
 
 /*buttons sing up and login*/
-$custom-colors: (
-    "color-orange": #d7986bbd,
-    "color-blue": rgb(93, 128, 151),
-);
-
-$theme-colors: map-merge($theme-colors, $custom-colors);

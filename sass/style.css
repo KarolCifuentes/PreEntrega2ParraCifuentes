@@ -10829,7 +10829,17 @@ body {
   font-size: 25px;
 }
 
-/*navbar barra de navegacion*/
+/*nav colores de nombre de la empresa*/
+.botonAzul {
+  background-color: #1f56ec;
+  text-transform: lowercase;
+}
+
+.botonNaranja {
+  background-color: #ec711f;
+  text-transform: lowercase;
+}
+
 .color-home {
   color: rgb(231, 74, 42);
 }
@@ -10879,7 +10889,7 @@ body {
   text-align: justify;
 }
 
-/*section 3 Home Service*/
+/*cards de la empresa*/
 .card-style {
   background-color: #fffaf7;
   border: 1px solid rgb(248, 214, 193);
@@ -10889,6 +10899,11 @@ body {
 
 .col-without-padding {
   padding: 0%;
+}
+
+.img-login {
+  background-image: url(/img/logo.png);
+  background-position: center center;
 }
 
 /*footer*/

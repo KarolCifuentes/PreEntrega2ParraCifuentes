@@ -1,0 +1,4 @@
+@mixin button-custom($colorBoton){
+    background-color: $colorBoton;
+    text-transform: lowercase;
+}
