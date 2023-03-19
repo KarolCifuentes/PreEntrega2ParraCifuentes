@@ -12,40 +12,35 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg p-4">
+        <div class="container-fluid">
+            <img src="/img/logo.png" alt="img logo" width="90em">
+            <h1 class="title"><span class="color-home">Home</span><span class="color-services">Service</span></h1>
 
-    <header> <!--header nav with bootstrap-->
-        <nav class="navbar navbar-light ">
-            <div class="d-flex align-items-center">
-                <img id="img-logo" src="/img/logo.png" alt="img logo" height="200px">
-                <h1 id="nam-company">
-                    <b><span class="color-home">Home</span><span class="color-services">Service</span></b>
-                </h1>
-            </div>
-            <div class="d-flex justify-content-end">
-                <ul class="d-flex align-items-center">
-                    <li class="nav-item active p-2 ">
-                        <a class="nav-link" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mx-3 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="/html/quienes_somos.html">Quienes somos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/quienes_somos.html">¿Quienes somos?</a>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="">Nuestro servicio</a>
-                    </li>
-                    <li class="nav-item p-2">
+                    <li class="nav-item">
                         <a class="nav-link">Contacto</a>
                     </li>
-                    <li class="buttons p-2">
-                        <a href="/html/sign_up_usuarios.html" class="btn btn-outline-primary mr-sm-2">Sing up</a>
-                    </li>
-                    <li class=" p-2">
-                        <a href="/html/login.html" class="btn btn-outline-primary">Login</a>
-                    </li>
                 </ul>
+                <div>
+                    <a type="button" class="btn btn-primary btn-sm" href="login.html">Iniciar sesión</a>
+                    <a type="button" class="btn btn-primary btn-sm" href="registro.html">Registro</a>
+                </div>
             </div>
-
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <div>
         <h2 class="cuenta" style="text-align: right;">CREAR CUENTA DE MIEMBROS</h2>
@@ -85,6 +80,40 @@
 
     </div>
 
-</body>
+    <div class="row">
+        <footer>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" href="#">Terminos legales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Atencion al cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="https://play.google.com/store/apps?hl=es_419">Nuestra App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Terminos legales</h5>
+                    <p class="card-text-center">En este apartado conozca mas sobre mas los términos legales para obtener nuestro servicio.
+                    </p>
+                    <button href="#" class="btn btn-primary">Mas informacion</button>
+                </div>
+                <div class="grid-footer-nav">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter-square"></a>
+                    <a href="https://www.linkedin.com/home" class="fa fa-linkedin-square"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>
