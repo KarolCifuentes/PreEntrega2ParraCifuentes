@@ -1,0 +1,147 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// *{
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: 'Poppins', sans-serif;
+// } 
+
+
+section{
+  position: relative;  
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 950px;
+}
+
+/*parte de abajo de la card*/
+.card{
+  position: relative;
+  background: #f3f8fc;
+  border-radius: 20px;
+  height: 400px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(170, 113, 113, 0.1);
+}
+
+/*parte de arriba de la card*/
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #fcf4f1;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+/*icono de foto card*/
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 20%;
+  padding: 3px;
+  background: #eae8e8;
+  margin-top: 30px;
+}
+
+/*Tamaño de la foto card*/
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 3px solid #fff;
+}
+
+/*Color de letra de los nombres y profesion*/
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: black;
+} 
+/* Tamaño de letra de los nombres*/
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Tamaño de letra de los profesion*/
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+/*Tamaño de las estrallas*/
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+/*Color de las estrallas*/
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #e8df2a;
+  
+}
+/*Tamaño de botones de card*/
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+/*Color de botones de card*/
+.card .button button{
+  background: #0946a1;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #6616d0;
+}
+
+.swiper-pagination{
+  position: absolute;
+  top: 450px;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: white;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: white;
+}
